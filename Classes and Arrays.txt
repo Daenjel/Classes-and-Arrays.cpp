@@ -1,0 +1,279 @@
+1.1
+#include<iostream>
+using namespace std;
+class Vehicle
+{
+	int Reg_Num;
+	char Model[20];
+	float cc;
+	public:
+	int getdetails()
+	{
+		cout<<"Enter the registration number"<<endl;
+		cin>>Reg_Num;
+		cout<<"Enter the cubic centimetres"<<endl;
+		cin>>cc;
+		cout<<"Enter the Car model"<<endl;
+		cin>>Model;
+	}
+	void display()
+	{
+		cout<<"Vehicle Registration Number: "<<Reg_Num<<endl;
+		cout<<"Vehicle cubic centimetres: "<<cc<<endl;
+		cout<<"Vehicle Model: "<<Model<<endl;
+	}
+};
+int main()
+	{
+		Vehicle rhc;
+		rhc.getdetails();
+		rhc.display();
+		return 0;
+	};	
+
+**************************************************************************************************
+1.2
+#include <iostream>
+using namespace std;
+
+class Vehicle
+{
+char Model[20];
+int number[3];
+float cubic[2];
+public:
+void getdetails()
+    { int i;
+        cout<<"Enter Vehicle Model:"<<endl;
+        cin>>Model;
+     for (i=0;i<1;i++)
+     	{
+         cout<<"Enter Registration Number: "<<endl;
+         cin>>number[i];
+         int j;
+            for (j=0;j<1;j++)
+     	{
+         cout<<"Enter Vehicle Cubic Centimetres: "<<endl;
+         cin>>cubic[j];
+            
+     	}
+     	}
+    }
+void display()
+    { int i;
+        cout<<"Vehicle Model: "<<Model<<endl;
+        for (i=0;i<1;i++)
+     	{
+         cout<<"Registration Number: "<<number[i]<<endl;
+     	}
+       int j;
+            for (j=0;j<1;j++)
+     	{
+         cout<<"Vehicle Cubic Centimetres: "<<cubic[j]<<endl;
+                     
+     	}
+    }
+};
+int main()
+{ int num,i;
+    cout << "Enter the number of Vehicles" << endl;
+    cin>>num;
+    Vehicle v[num];
+    for(i=0;i<num;i++)
+        v[i].getdetails();
+        cout<<"***************************************************"<<endl;
+      for(i=0;i<num;i++)
+        v[i].display();
+    return 0;
+}
+
+
+******************************************************************************************************
+2.1
+#include<iostream>
+using namespace std;
+class Vehicle
+{
+	int Reg_Num;
+	char Model[50];
+	float cc;
+	public:
+		float tax;
+	    int getdetails()
+	{
+		cout<<"Enter the registration number"<<endl;
+		cin>>Reg_Num;
+		cout<<"Enter the cubic centimetres"<<endl;
+		cin>>cc;
+		cout<<"Enter the Car model"<<endl;
+		cin>>Model;
+	}
+	float gettax()
+	{
+		if(cc>1200)
+		{
+		tax=(10*cc);
+			cout<<"tax is: "<<tax<<endl;
+		}
+		else 
+		{
+		tax=10000;
+			cout<<"tax is: "<<tax<<endl;
+		}
+	}
+	void display()
+	{
+		cout<<"Vehicle Registration Number: "<<Reg_Num<<endl;
+		cout<<"Vehicle cubic centimetres: "<<cc<<endl;
+		cout<<"Vehicle Model: "<<Model<<endl;
+	
+	}
+};
+int main()
+	{
+		Vehicle rhc;
+		rhc.getdetails();
+		rhc.display();
+		rhc.gettax();
+		return 0;
+	};	
+*******************************************************************************************
+2.2
+#include <iostream>
+using namespace std;
+
+class Vehicle
+{
+char Model[20];
+int number[3];
+float cubic[2];
+public:
+void getdetails()
+    { int i;
+        cout<<"Enter Vehicle Model:"<<endl;
+        cin>>Model;
+     for (i=0;i<1;i++)
+     	{
+         cout<<"Enter Registration Number: "<<endl;
+         cin>>number[i];
+         int j;
+            for (j=0;j<1;j++)
+     	{
+         cout<<"Enter Vehicle Cubic Centimetres: "<<endl;
+         cin>>cubic[j];
+            
+     	}
+     	}
+    }
+    float gettax()
+	{
+		float tax;
+		if(cubic[2]>1200)
+		{
+		tax=(10*cubic[2]);
+			cout<<"tax is: "<<tax<<endl;
+		}
+		else 
+		{
+		tax=10000;
+			cout<<"tax is: "<<tax<<endl;
+		}
+	}
+void display()
+    { int i;
+        cout<<"Vehicle Model: "<<Model<<endl;
+        for (i=0;i<1;i++)
+     	{
+         cout<<"Registration Number: "<<number[i]<<endl;
+     	}
+       int j;
+            for (j=0;j<1;j++)
+     	{
+         cout<<"Vehicle Cubic Centimetres: "<<cubic[j]<<endl;
+                     
+     	}
+    }
+};
+int main()
+{ int num,i;
+    cout << "Enter the number of Vehicles" << endl;
+    cin>>num;
+    
+    Vehicle v[num];
+    for(i=0;i<num;i++)
+        v[i].getdetails();
+        cout<<"***************************************************"<<endl;
+        
+      for(i=0;i<num;i++)
+        v[i].display();
+        v[i].gettax();
+    return 0;
+}
+
+
+********************************************************************************************
+3.1
+#include<iostream>
+using namespace std;
+class Accounts
+{
+	char Acc_name[20];
+	char Acc_num[30];
+	float Balance;
+	public:
+	int getdetails()
+	{
+		cout<<"Enter the Account Name"<<endl;
+		cin>>Acc_name;
+		cout<<"Enter the Account Number"<<endl;
+		cin>>Acc_num;
+		cout<<"Enter the Account Balance"<<endl;
+		cin>>Balance;
+	}
+	void display()
+	{
+		cout<<"The Account name is: "<<Acc_name<<endl;
+		cout<<"The Account number is: "<<Acc_num<<endl;
+		cout<<"The Account balance is: "<<Balance<<endl;
+	}
+};
+int main()
+	{
+		Accounts acc;
+		acc.getdetails();
+		acc.display();
+		return 0;
+	};	
+*************************************************************************************************
+4.1
+#include<iostream>
+using namespace std;
+class Invoice
+{
+	int inv_num;
+	char mfp[10];
+	float amount;
+	public:
+	int getdetails()
+	{
+		cout<<"Enter the Invoice Number"<<endl;
+		cin>>inv_num;
+		cout<<"Enter the Month Of Purchase"<<endl;
+		cin>>mfp;
+		cout<<"Enter the Invoice Amount"<<endl;
+		cin>>amount;
+	}
+	void display()
+	{
+		cout<<"Invoice Number is: "<<inv_num<<endl;
+		cout<<"Month Of Purchase is: "<<mfp<<endl;
+		cout<<"Invoice Amount is: "<<amount<<endl;
+	}
+};
+int main()
+	{
+		Invoice invo;
+		invo.getdetails();
+		invo.display();
+		return 0;
+	};	
